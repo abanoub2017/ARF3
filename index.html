@@ -220,11 +220,60 @@
                         </li>
 
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#" style="font-size:30px;cursor:pointer"
-                                onclick="openNav()">
+                        <li class="nav-item drop-menu">
+                            <a class="nav-link text-white drop-form" href="#" style="font-size:30px;cursor:pointer">
                                 <img src="img/cogwheel-outline(2).png" alt="">
                             </a>
+
+                            <div class="details-drop-none py-2 px-2 shadow-lg rounded">
+                                    <form>
+                                        <div class="form-row">
+
+                                                <div class="form-group  col-md-6 ">
+
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline6">Dark Theme</label>
+                                                        </div> 
+                                               </div>
+
+                                                <div class="form-group  col-md-6 ">
+
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline7" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline7">Light Theme</label>
+                                                </div> 
+                                                </div>
+
+                                        </div>
+                                      
+                                       <div class="form-group ">
+                                            <label class="inputState d-flex justify-content-around"> <span>Stock list</span>  <span class="stock-orange">( Change default active tab )</span></label>
+                                            <div class="select">
+                                                       
+                                                    <select id="inputState" class="form-control">
+                                                            <option selected>Movments</option>
+                                                            <option>...</option>
+                                                          </select> 
+                                                       </div>
+                                      </div>
+                                      <div class="form-group ">
+                                            <label class="inputState d-flex justify-content-around"> <span>Account Tabs</span>  <span class="stock-orange">( Change default active tab )</span></label>
+                                            <div class="select">
+                                                       
+                                                    <select id="inputState" class="form-control">
+                                                            <option selected>Movments</option>
+                                                            <option>...</option>
+                                                          </select> 
+                                                       </div>
+                                      </div>
+                                   <div class="d-flex justify-content-end">
+                                        <button type="submit" class="btn text-white">Cancel</button>
+                                        <button type="submit" class="btn btn-green">Save</button>
+                                   </div>
+                                    </form>
+                            </div>
+
                         </li>
 
                         <li class="nav-item">
@@ -234,6 +283,8 @@
                                 <span>Wellcome Abanoub George</span>
                             </a>
                         </li>
+
+                        
                         <li class="nav-item">
                             <a class="nav-link logout2 text-white" href="#">
                                 Logout
@@ -449,11 +500,21 @@
 
                             <div id="carouselExampleIndicators" class="carousel  " data-ride="carousel">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                        Chart
+                                    </li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                        Overview
+                                    </li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                        Anouncment
+                                    </li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                                        Bid & Asks
+                                    </li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4">
+                                        Analysis Reposrts
+                                    </li>
                                 </ol>
 
                                 <div class="carousel-inner">
@@ -735,113 +796,115 @@
                                     <div class="carousel-item">
                                         <div class="bid-asks mCustomScrollbar" data-mcs-theme="minimal-dark">
                                             <!-- Bid Ana Asks -->
-                                            <div class="row">
+                                            <div class="container-fluid">
 
-                                                <div class="col-md-6">
-                                                    <div class="bid">
-
-                                                        <table
-                                                            class="table table-striped  table-borderless text-center ">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="row">Bid</th>
-                                                                    <th scope="row">Bid Qity</th>
-                                                                    <th scope="row">Splits</th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-
-
-                                                            </tbody>
-                                                        </table>
-
-                                                        <div class="total pt-2">
-                                                            <span>Total Bid Quantity (Splits)</span><br>
-                                                            <span>30.845 (14)</span>
+                                                <div class="row">
+    
+                                                    <div class="col-md-6">
+                                                        <div class="bid">
+    
+                                                            <table
+                                                                class="table table-striped  table-borderless text-center ">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="row">Bid</th>
+                                                                        <th scope="row">Bid Qity</th>
+                                                                        <th scope="row">Splits</th>
+    
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+    
+    
+                                                                </tbody>
+                                                            </table>
+    
+                                                            <div class="total pt-2">
+                                                                <span>Total Bid Quantity (Splits)</span><br>
+                                                                <span>30.845 (14)</span>
+                                                            </div>
+    
                                                         </div>
-
                                                     </div>
-                                                </div>
-
-                                                <div class="col-md-6">
-                                                    <div class="ask">
-
-                                                        <table
-                                                            class="table table-striped  table-borderless text-center ">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="row">Ask</th>
-                                                                    <th scope="row">Asks Qity</th>
-                                                                    <th scope="row">Splits</th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>14.15</td>
-                                                                    <td>870</td>
-                                                                    <td>1</td>
-                                                                </tr>
-
-
-                                                            </tbody>
-                                                        </table>
-
-                                                        <div class="total pt-2">
-                                                            <span>Total Ask Quantity (Splits)</span><br>
-                                                            <span>30.845 (14)</span>
+    
+                                                    <div class="col-md-6">
+                                                        <div class="ask">
+    
+                                                            <table
+                                                                class="table table-striped  table-borderless text-center ">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="row">Ask</th>
+                                                                        <th scope="row">Asks Qity</th>
+                                                                        <th scope="row">Splits</th>
+    
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>14.15</td>
+                                                                        <td>870</td>
+                                                                        <td>1</td>
+                                                                    </tr>
+    
+    
+                                                                </tbody>
+                                                            </table>
+    
+                                                            <div class="total pt-2">
+                                                                <span>Total Ask Quantity (Splits)</span><br>
+                                                                <span>30.845 (14)</span>
+                                                            </div>
+    
                                                         </div>
-
                                                     </div>
+    
                                                 </div>
-
-
                                             </div>
                                         </div>
 
@@ -856,17 +919,17 @@
                                                         <div class="col-md-3 col-sm-12 d-flex ">
                                                             <div class="detailH">
                                                                 <p>GTHE</p>
-                                                                <span>Global Telecome</span>
+                                                                <span class="font-size">Global Telecome</span>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-9 col-sm-12 d-flex">
                                                             <div class="detailH">
-                                                                <p>Sector</p>
+                                                                <!-- <p>Sector</p> -->
                                                                 <span class="d-flex justify-content-around">
-                                                                    <span>4.84</span>
-                                                                    <span>2265</span>
-                                                                    <span>2.40</span>
-                                                                    <span class="stock-red"><i
+                                                                    <span class="stock-red" >4.84</span>
+                                                                    <span class="stock-red">2265</span>
+                                                                    <span class="stock-red">2.40</span>
+                                                                    <span class="stock-red" class="stock-red"><i
                                                                             class="fas fa-arrow-down "></i></span>
                                                             </div>
                                                             </span>
@@ -940,7 +1003,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="read">
+                                                        <div class="col-md-4 col-sm-6 read">
 
                                                             <a class="btn btn-dark" href="#">
                                                                 <i class="fas fa-angle-double-right"></i>

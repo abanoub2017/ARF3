@@ -1,35 +1,44 @@
 // Side Menu
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginRight = "250px";
-  }
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "250px";
+//     document.getElementById("main").style.marginRight = "250px";
+//   }
   
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
-  } 
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//     document.getElementById("main").style.marginRight= "0";
+//   } 
   
-  // Slider
-  var swiper = new Swiper('.swiper-container', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      on: {
-        resize: function(){
-            console.log('test ');
-        },
-      },
-  });
-  $('.carousel').carousel({
-    interval: 0
-  })
+//   // Slider
+//   var swiper = new Swiper('.swiper-container', {
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//       },
+//       on: {
+//         resize: function(){
+//             console.log('test ');
+//         },
+//       },
+//   });
+
+  
   // Fixed Menu
   $(document).ready(function(){
+
+   // Dropdown menu 
+//    $(".drop-form").click(function(){
+//     $(".details-drop-none").toggleClass("details-drop-block");
+//   });
+
+    $('.carousel').carousel({
+        interval: 0
+      })
+    //   Fixed Menu
       $(".clicktoggle").click(function(){
         $(".menu").toggleClass("translat");
         $(".iconToggel").toggleClass("rotate");
@@ -42,29 +51,12 @@ function openNav() {
           $(".display-none").toggle("display-block");
           $(".display-block").toggle("display-none");
         });
-        // swiper.on('resize',function(){
-        //     console.log('test ');
-            
-        // })
-         
 
   // Nice Scroll
-
-    $(".postions , .acount-status ,.order , .alert , .wash-list , .wallet-status , .overview  , .anouncment, .wallet ,.bid-asks").mCustomScrollbar({
+    $(".postions , .acount-status ,.order , .alert , .wash-list , .wallet-status , .overview  , .anouncment, .wallet , .bid-asks").mCustomScrollbar({
        
         axis:"xy", // vertical and horizontal scrollbar
-       })
-
-       
-        // $("  .stockB   ").niceScroll({
-        //     cursorwidth: 5,  
-        //     cursoropacitymin: 0.0,
-        //     cursorcolor: '#f57a20',
-        //     cursorborder: 'none',
-        //     cursorborderradius: 0,
-        //     autohidemode: 'leave',
-        //   });  
-
+       });
 
      //   Charts 
          Highcharts.chart('container', {
@@ -195,13 +187,7 @@ function openNav() {
               }]
           }
          });
-  
-  
-  
-  
-  
-  
-  
+
          
     });
   

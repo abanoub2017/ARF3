@@ -32,6 +32,9 @@ body#main {
   color: #fff;
 }
 
+.font-size{
+  font-size: 13px !important;
+}
 .top-50 {
   top: 37%;
   right: 0;
@@ -131,6 +134,14 @@ body#main {
 
 .stock-red {
   color: #ff0000;
+}
+.btn-green{ 
+  background:  #45b308;
+  color: #fff;
+  border-radius: 39px;
+  padding-left: 20px;
+  padding-right: 20px
+
 }
 
 .background,
@@ -531,6 +542,11 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(156, 156, 156, 0.3)), to(rgba(0, 0, 0, 0.3)));
   background-image: linear-gradient(rgba(156, 156, 156, 0.3), rgba(0, 0, 0, 0.3));
 }
+.header .navbar-nav .dropdown-menu{
+  background: rgb(11, 15, 24) !important;
+  color: #fff;
+  border-radius: 9% !important;
+}
 
 .logout2 {
   background: url(../img/images/tabs/loginbg.png) center center no-repeat;
@@ -545,6 +561,75 @@ body {
   background: #27272985 !important;
 }
 
+/* Menu Dropdown */
+.drop-menu{
+position: relative;
+transition: all .3s ease-in-out;
+}
+ .details-drop-none{
+display: none;
+transition: all .3s ease-in-out;
+position: absolute;
+z-index: 99999;
+width: 18vw;
+top: 80%;
+padding: 5px;
+border-radius: 20px;
+font-size: 15px;
+transition: all .3s ease-in-out;
+background: rgb(11, 15, 24) !important;
+}
+.drop-menu:hover .details-drop-none{
+  display: block;
+  }
+ .details-drop-none.shadow-lg{
+  box-shadow: 0 8rem 9rem rgba(0,0,0,.5)!important;
+}
+ .details-drop-none.rounded{
+  border-radius: 1.25rem!important;
+}
+ 
+ .details-drop-none .form-control ,  .details-drop-none input {
+    background-color: rgb(12, 16, 24);
+    border: 1px solid #191d25;
+    height: 34px;
+}
+ .details-drop-none .custom-control-label ,  .details-drop-none .btn ,  .details-drop-none  .form-group label  {
+font-size: 13px
+}
+ .details-drop-none  .select::after {
+  padding-top: 3%;
+}
+
+/* .details-drop-block.shadow-lg{
+  box-shadow: 0 8rem 9rem rgba(0,0,0,.5)!important;
+}
+.details-drop-block.rounded{
+  border-radius: 1.25rem!important;
+}
+.details-drop-block{
+  display: block;
+  position: absolute;
+  z-index: 99999;
+  width: 18vw;
+  top: 80%;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: all .3s ease-in-out;
+  background: rgb(11, 15, 24) !important;
+  }
+  .details-drop-block .form-control , .details-drop-block input {
+    background-color: rgb(12, 16, 24);
+    border: 1px solid #191d25;
+    height: 34px;
+}
+.details-drop-block .custom-control-label , .details-drop-block .btn , .details-drop-block  .form-group label  {
+font-size: 13px
+}
+.details-drop-block  .select::after {
+  padding-top: 3%;
+} */
 /* Home */
 .home {
   height: calc(100vh - 93px - 40px);
@@ -658,6 +743,13 @@ body {
 .home .stocksAndDetail .stocksD .starAndCrad .buy-sell span {
   margin: 5px;
 }
+/* Carousel */
+/* .carousel-indicators{
+
+}
+.carousel-indicators li{
+text-indent: 0;
+} */
 
 /* welletstatus  */
 .home .welletstatus {
@@ -822,9 +914,12 @@ body {
   text-align: center;
 }
 
+.analysis-report .detailH span {
+  font-size: 20px;
+}
 .analysis-report .details,
 .analysis-report .detailH {
-  border: 1px solid #45b308;
+  /* border: 1px solid #45b308; */
   /* height: 13vh; */
   border-radius: 5px;
   display: flex;
@@ -833,7 +928,13 @@ body {
   box-sizing: border-box;
   flex-flow: column;
   justify-content: center;
+  line-height: 1.6;
   padding: 3px;
+  background: rgb(14,16,27) !important;
+  background: -moz-linear-gradient(45deg, rgba(14,16,27,1) 0%, rgba(14,24,57,1) 100%) !important ;
+  background: -webkit-linear-gradient(45deg, rgba(14,16,27,1) 0%, rgba(14,24,57,1) 100%) !important;
+  background: linear-gradient(45deg, rgba(14,16,27,1) 0%, rgba(14,24,57,1) 100%) !important; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e101b",endColorstr="#0e1839",GradientType=1) !important;
 }
 
 .analysis-report .details p,
@@ -856,24 +957,24 @@ body {
 } */
 .analysis-report .details:hover,
 .analysis-report .detailH:hover {
-  background: #f68923;
+  /* background: #f68923; */
   color: #fff !important;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 }
 
 .analysis-report .details:hover p,
 .analysis-report .detailH:hover p {
 
-  color: #fff !important;
+  /* color: #fff !important; */
 
 }
 
 .analysis-report .read .btn {
   margin: 5px;
-  border: 1px solid #fff;
-  padding: 7px;
-  font-size: 14px;
+  border: none;
+  padding: 12px;
+  font-size: 17px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -881,7 +982,7 @@ body {
   -o-border-radius: 15px;
   margin-right: 10px;
   cursor: pointer;
-  background: transparent;
+  background: #f68923;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -1004,7 +1105,7 @@ body {
 
 /* Bid and Asks */
 .bid-asks {
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
   text-align: center
 }
@@ -1018,7 +1119,7 @@ body {
 }
 
 .bid-asks .bid .table-striped tbody tr {
-  background-color: #45b308;
+  background-color: #71963d;
 }
 
 .bid-asks .ask .table-striped tbody tr:nth-of-type(2n+1) {
@@ -1026,7 +1127,7 @@ body {
 }
 
 .bid-asks .ask .table-striped tbody tr {
-  background-color: #ff0000;
+  background-color: #ce1313;
 }
 
 /* Chart2 */
@@ -1471,6 +1572,38 @@ select:focus {
 
 
 @media screen and (max-width:426px) {
+  .request .nav-pills .nav-link.active, .request .nav-pills .show>.nav-link {
+    color: #fff;
+    background: url(../img/images/tabs/bgActive.png) center center no-repeat;
+    height: 100px;
+    background-size: cover;
+}
+  .request .nav-pills .items {
+    height: auto;
+    width: 33%;
+}
+  .request .nav-pills div {
+    cursor: pointer;
+    height: 100px;
+}
+  .request .nav-pills .nav-link.active .main-img, .request .nav-pills .show>.nav-link .main-img {
+    display: none;
+    height: 43px;
+}
+.request .nav-pills .nav-link.active .sec-img, .request .nav-pills .show>.nav-link .sec-img {
+  display: inline-block;
+  height: 30px;
+}
+  .request .nav-pills .main-img {
+    display: inline-block;
+    height: 30px;
+}
+  .marketIndicies .home{
+    overflow: hidden ;
+  }
+  .stocksAndDetail >  .container-fluid> .row{
+    margin: 0;
+  }
   .container-fluid{
     padding: 0 !important;
   }
@@ -1481,7 +1614,9 @@ select:focus {
   .position-fixed.shadow.top-50 {
     z-index: 999;
   }
-
+  .carousel-indicators{
+    display: none;
+  }
   .home {
     height: auto !important;
     overflow: visible;
@@ -1526,10 +1661,11 @@ select:focus {
 
   .welletstatus .container-fluid {
     padding: 0 !important;
+    overflow-x: hidden;
   }
 
   .welletstatus {
-    height: 100% !important;
+    height: auto !important;
   }
 
   .welletstatus>.container-fluid>.row {
@@ -1538,7 +1674,7 @@ select:focus {
   }
 
   footer.text-center {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   footer.text-center p {
